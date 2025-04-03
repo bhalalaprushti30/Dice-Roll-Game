@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Dice Roll Game 🎲</h1>
+        <p>Play against AI! First to 5 wins!</p>
+
+        <div class="dice-area">
+            <div class="player">
+                <h2>👤 You</h2>
+                <img id="player-dice" src="images/dice1.png" alt="Your Dice">
+                <p id="player-score">Score: 0</p>
+            </div>
+
+            <div class="player">
+                <h2>🤖 AI</h2>
+                <img id="ai-dice" src="images/dice1.png" alt="AI Dice">
+                <p id="ai-score">Score: 0</p>
+            </div>
+        </div>
+
+        <button onclick="rollDice()">🎲 Roll Dice</button>
+        <p id="result">First to 5 wins!</p>
+
+        <button id="reset-btn" onclick="resetGame()">🔄 Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
